@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/_mixin_variables.scss",
+        "../scss/_header.scss",
+        "../scss/_banner.scss",
+        "../scss/_offer.scss",
+        "../scss/_serve.scss",
+        "../scss/_feedback.scss",
+        "../scss/_consultant.scss",
+        "../scss/_features.scss",
+        "../scss/_appointment.scss",
+        "../scss/_blog.scss",
+        "../scss/_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
