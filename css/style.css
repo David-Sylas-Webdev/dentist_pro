@@ -335,8 +335,128 @@ nav #menu #hamburger-div svg {
   #offer-album {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
   }
   #offer-album .offer-in-detail {
+    line-height: 2 !important;
+  }
+}
+
+#blog-section {
+  padding: 32px 16px 64px 16px;
+}
+
+#blog-section h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+#blog-section h3 {
+  font-size: .8rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+#blog-section #blog-album {
+  margin-top: 32px;
+}
+
+#blog-section #blog-album > div[id*="blog-"] {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+#blog-section .blog-img {
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#blog-section .one {
+  background-image: url(/assets/image/pexels-ketut-subiyanto-4545968.jpg);
+}
+
+#blog-section .two {
+  background-image: url(/assets/image/pexels-daria-shevtsova-962784.jpg);
+}
+
+#blog-section .three {
+  background-image: url(/assets/image/pexels-andrea-piacquadio-3755755.jpg);
+}
+
+#blog-section .four {
+  background-image: url(/assets/image/pexels-oleg-magni-958946.jpg);
+}
+
+#blog-section .date-header {
+  width: 120px;
+  padding: 10px 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: .8rem;
+  text-align: center;
+  margin-top: 8px;
+}
+
+#blog-section .blog-in-detail {
+  color: #6b6161;
+  font-size: .9rem;
+  padding-top: 8px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.heart {
+  width: 16px;
+  height: 16px;
+  fill: #333;
+}
+
+.blog-react, .likes-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.likes-div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.likes-div p {
+  margin-left: 5px;
+}
+
+.blog-react {
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 800px) {
+  #blog-album {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #blog-album {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+  }
+  #blog-album .blog-in-detail {
     line-height: 2 !important;
   }
 }

@@ -1,0 +1,103 @@
+
+#blog-section{
+    
+    padding: 32px 16px 64px 16px;
+    h2{
+        @include h2-kindred();
+    }
+
+    h3{
+        @include h3-kindred();
+    }
+
+    #blog-album{
+        margin-top: 32px;
+        >div[id *="blog-"]{
+            width: 100%;
+            margin-bottom: 32px;
+        }
+    }
+
+    .blog-img{
+        @include image-kindred();
+    }
+
+    .one{
+        background-image: url(/assets/image/pexels-ketut-subiyanto-4545968.jpg);
+    }
+
+    .two{
+        background-image: url(/assets/image/pexels-daria-shevtsova-962784.jpg);
+    }
+    
+    .three{
+        background-image: url(/assets/image/pexels-andrea-piacquadio-3755755.jpg);
+    }
+    
+    .four{
+        background-image: url(/assets/image/pexels-oleg-magni-958946.jpg);
+    }
+
+    .date-header{
+        width: 120px;
+        padding: 10px 10px;
+        background-color: #000;
+        color: #fff;
+        font-size: .8rem;
+       text-align: center;
+       margin-top: 8px;
+    }
+
+    .blog-in-detail{
+        @include in-detail();
+    }
+    
+}
+
+
+
+
+.heart{
+    width: 16px;
+    height: 16px;
+    fill: #333;
+}
+
+.blog-react, .likes-div{
+    display: flex;
+    justify-content: space-between;
+}
+.likes-div{
+    align-items: center;
+    p{
+        margin-left: 5px;
+
+    }
+}
+
+.blog-react{
+    margin-top: 16px;
+}
+
+
+
+@media screen and (min-width: 800px){
+    #blog-album{
+        padding-left: 10%;
+        padding-right: 10%;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;      
+    }
+} 
+
+@media screen and (min-width: 1300px){
+    #blog-album{
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 32px;      
+
+        .blog-in-detail{
+            line-height: 2 !important;
+        }
+    }
+}
