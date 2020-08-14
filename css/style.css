@@ -1,1 +1,343 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap);
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  padding: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 1px 10px #999;
+          box-shadow: 0px 1px 10px #999;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav #logo {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+nav #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav #menu .nav-icons {
+  background-color: rgba(222, 222, 222, 0.5);
+  border-radius: 4px;
+  border: none;
+  padding: 5px 15px;
+  margin-right: 10px;
+}
+
+nav #menu .nav-icons svg {
+  width: 12px;
+  height: 12px;
+  fill: #333;
+}
+
+nav #menu #hamburger-div {
+  margin-left: 32px;
+}
+
+nav #menu #hamburger-div svg {
+  height: 20px;
+  width: 20px;
+}
+
+#larger-view-menu-options {
+  display: none;
+}
+
+.num-email {
+  display: none;
+}
+
+#drop-arrow {
+  padding-left: 3px;
+}
+
+#drop-arrow svg {
+  height: 5px;
+  width: 8px;
+  fill: #fff;
+  stroke-width: 10px;
+}
+
+#side-menu {
+  left: -1000px;
+  background-color: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  width: 60%;
+  height: 100Vh;
+  color: #dedede;
+  font-size: .75rem;
+  padding-top: 32px;
+  -webkit-transition: all 0.8s cubic-bezier(0.96, 0, 0.13, 1);
+  transition: all 0.8s cubic-bezier(0.96, 0, 0.13, 1);
+}
+
+#side-menu > a {
+  margin-bottom: 32px;
+  padding-left: 16px;
+  font-weight: 600;
+}
+
+#side-menu #blog-ref {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#side-menu .blog-sub {
+  padding-left: 32px;
+}
+
+.toggle-menu {
+  left: 0 !important;
+}
+
+.switcheroo-none {
+  display: none !important;
+}
+
+.switcheroo-display {
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+
+@media screen and (min-width: 600px) {
+  #menu .nav-icons {
+    border-radius: 4px;
+    padding: 10px 18px !important;
+  }
+  #menu .nav-icons svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+  #hamburger-div {
+    margin-left: 60px !important;
+  }
+  #hamburger-div svg {
+    height: 22px !important;
+    width: 22px !important;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  header {
+    height: 90px;
+  }
+  nav {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #larger-view-menu-options {
+    margin: 10px 5% 0 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: -webkit-gradient(linear, left top, right top, from(#9fc92b), to(#7da805));
+    background-image: linear-gradient(to right, #9fc92b, #7da805);
+    padding: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #larger-view-menu-options #l-menu {
+    color: #fff;
+    font-size: .65rem;
+    font-weight: 600;
+  }
+  #larger-view-menu-options #l-menu > a {
+    margin-right: 15px;
+  }
+  #larger-view-menu-options #l-social .social svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 20px;
+    fill: #fff;
+    color: #fff;
+    opacity: .45;
+  }
+  #hamburger-div {
+    display: none;
+  }
+  .nav-icons {
+    display: none;
+  }
+  .num-email {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: .65rem;
+    background-color: rgba(222, 222, 222, 0.3);
+    padding: 10px;
+    margin-right: 16px;
+    border-radius: 5px;
+    color: #222;
+  }
+  #support-ref {
+    margin-right: 0px;
+  }
+  #blog-menu-sub {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ece9e9;
+    -webkit-transform: translate3d(370px, 40px, 0px);
+            transform: translate3d(370px, 40px, 0px);
+  }
+  #blog-menu-sub > * {
+    font-size: .75rem;
+    padding: 10px 30px 20px;
+  }
+}
+
+#close {
+  display: none;
+}
+
+#blog-menu-sub {
+  display: none;
+}
+
+.hover-blog {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+#offer-section {
+  padding: 32px 16px 64px 16px;
+}
+
+#offer-section h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+#offer-section h3 {
+  font-size: .8rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+#offer-section #offer-album {
+  margin-top: 32px;
+}
+
+#offer-section #offer-album > div[id*="offer-"] {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+#offer-section #offer-album > div[id*="offer-"] .offer-img {
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#offer-section #offer-album > div[id*="offer-"] .first {
+  background-image: url(/assets/image/pexels-anna-shvets-3845653.jpg);
+}
+
+#offer-section #offer-album > div[id*="offer-"] .second {
+  background-image: url(/assets/image/pexels-robert-golebiewski-3663999.jpg);
+}
+
+#offer-section #offer-album > div[id*="offer-"] .third {
+  background-image: url(/assets/image/pexels-anna-shvets-3845653.jpg);
+}
+
+#offer-section #offer-album > div[id*="offer-"] .fourth {
+  background-image: url(/assets/image/pexels-robert-golebiewski-3663999.jpg);
+}
+
+#offer-section #offer-album > div[id*="offer-"] .offer-header {
+  font-weight: 700;
+  font-size: 1rem;
+  padding-top: 8px;
+}
+
+#offer-section #offer-album > div[id*="offer-"] .offer-in-detail {
+  color: #6b6161;
+  font-size: .9rem;
+  padding-top: 8px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 800px) {
+  #offer-album {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #offer-album {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  #offer-album .offer-in-detail {
+    line-height: 2 !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
