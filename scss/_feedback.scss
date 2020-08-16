@@ -1,0 +1,127 @@
+#feedback-section{
+
+    padding: 32px 16px 64px 16px;
+
+    h2{
+        @include h2-kindred();
+    }
+
+    h3{
+        @include h3-kindred();
+    }
+
+    #slide-album{
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 16px;
+        
+
+        .slide-tile{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #dedede;
+            border-radius: 8px;
+
+            .avatar{
+                border-radius: 50%;
+                height: 100px;
+                width: 100px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;margin-top: 8px;
+            }
+
+           .slide{
+            .slide-details{
+                text-align: center;
+                line-height: 2;
+                font-size: .75rem;
+                padding: 10px;
+            }
+
+            >div{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding-bottom: 16px;
+
+                & p:nth-child(1){
+                    margin: 32px 0px 0px ;
+                    font-weight: 700;
+                    font-size: 1rem;
+            }
+
+                & p:nth-child(2){
+                        margin: 10px 0px;
+                        font-size: .8rem;
+                }
+            }
+           }
+
+
+        }
+    }
+
+}
+
+
+.une{
+    background-image: url("/assets/image/pexels-andrea-piacquadio-774909.jpg") !important;
+}
+
+.deux{
+    background-image: url("/assets/image/pexels-creation-hill-1681010.jpg") !important;
+}
+
+.trois{
+    background-image: url("/assets/image/pexels-andrea-piacquadio-3755755.jpg") !important;
+}
+
+.quatre{
+    background-image: url("/assets/image/pexels-victor-miyata-1845534.jpg") !important;
+}
+
+.cinq{
+    background-image: url("/assets/image/pexels-đỗ-ngọc-tú-quyên-1520760.jpg") !important;
+}
+
+.six{
+    background-image: url("/assets/image/pexels-daria-shevtsova-789812.jpg") !important;
+}
+
+#circles{
+    display: flex;
+    justify-content: center;
+
+    >div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .circle{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+            cursor: pointer;
+            background-color: rgba(124, 119, 119, .4);
+        }
+
+        .circle-1{
+            background-color: #68BC01;
+        }   
+    }
+}
+
+
+@media screen and (min-width:600px){
+    #slide-album{
+        grid-template-columns: repeat(2, 1fr) !important;
+        padding-left: 20%;
+        padding-right: 20%;
+    }        
+
+}
