@@ -1,0 +1,11 @@
+$primary-color: green;
+
+@mixin btn($font-size,$padding-updown,$padding-sides){
+    text-decoration:none;
+    background: $primary-color;
+    color: #fff;
+    font-size: $font-size;
+    border: 1px solid #fff;
+    font-weight: 600;
+    padding: $padding-updown $padding-sides;
+}
