@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap);
 * {
   padding: 0;
@@ -15,11 +16,14 @@ a {
 header {
   position: -webkit-sticky;
   position: sticky;
+  z-index: 1000;
   width: 100%;
   padding: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 1px 10px #999;
           box-shadow: 0px 1px 10px #999;
+  top: 0;
+  background-color: #fff;
 }
 
 nav {
@@ -339,6 +343,156 @@ nav #menu #hamburger-div svg {
   }
   #offer-album .offer-in-detail {
     line-height: 2 !important;
+  }
+}
+
+#feedback-section {
+  padding: 32px 16px 64px 16px;
+}
+
+#feedback-section h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+#feedback-section h3 {
+  font-size: .8rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+#feedback-section #slide-album {
+  margin-top: 32px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 16px;
+}
+
+#feedback-section #slide-album .slide-tile {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+}
+
+#feedback-section #slide-album .slide-tile .avatar {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 8px;
+}
+
+#feedback-section #slide-album .slide-tile .slide .slide-details {
+  text-align: center;
+  line-height: 2;
+  font-size: .75rem;
+  padding: 10px;
+}
+
+#feedback-section #slide-album .slide-tile .slide > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 16px;
+}
+
+#feedback-section #slide-album .slide-tile .slide > div p:nth-child(1) {
+  margin: 32px 0px 0px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+#feedback-section #slide-album .slide-tile .slide > div p:nth-child(2) {
+  margin: 10px 0px;
+  font-size: .8rem;
+}
+
+.une {
+  background-image: url("/assets/image/pexels-andrea-piacquadio-774909.jpg") !important;
+}
+
+.deux {
+  background-image: url("/assets/image/pexels-creation-hill-1681010.jpg") !important;
+}
+
+.trois {
+  background-image: url("/assets/image/pexels-andrea-piacquadio-3755755.jpg") !important;
+}
+
+.quatre {
+  background-image: url("/assets/image/pexels-victor-miyata-1845534.jpg") !important;
+}
+
+.cinq {
+  background-image: url("/assets/image/pexels-đỗ-ngọc-tú-quyên-1520760.jpg") !important;
+}
+
+.six {
+  background-image: url("/assets/image/pexels-daria-shevtsova-789812.jpg") !important;
+}
+
+#circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#circles > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#circles > div .circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  cursor: pointer;
+  background-color: rgba(124, 119, 119, 0.4);
+}
+
+#circles > div .circle-1 {
+  background-color: #68BC01;
+}
+
+@media screen and (min-width: 600px) {
+  #slide-album {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
 
