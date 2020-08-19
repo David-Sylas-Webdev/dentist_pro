@@ -10,9 +10,9 @@
 #banner-section{ 
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    height: 100vh;
+    height: 800px;
     font-size: 10px;    //scale of reference == 1em
-
+    margin-bottom: 200px;
     
     background: url(/assets/image/banner-bg.jpg);
     background-size: cover;
@@ -21,26 +21,26 @@
     background-position: center;  
 
     .container{   
-        height: 100vh !important;
+        min-height: 100% !important;
         width: 100% !important;
         background: rgba(4, 9, 30, 0.851);   //overlay bg
         .wlc-txt{
             position: relative;
-            top: 20%;
+            padding-top: 20% !important;
             text-align: center !important;
             h3{
-                font-size: 1.6em;
-                margin: 15px 0;
+                font-size: 1.3em;
+                padding: 20px;
             }
             h1{
-                font-size: 4.8em;
+                font-size: 4.0em;
                 font-weight: 600;
-                margin: 20px 0;
+                padding: 20px;
             }
             p{
                 font-size: 1.4em;
                 line-height: 1.65;
-                padding: 0 1.5em;
+                padding: 15px 20px;
                 //setting max-width and margin left,right
                 // as auto centers the element
                 max-width: 750px;   
@@ -58,6 +58,7 @@
     }
 
     .open-hrs{
+        top: -25%;
         border: 1px solid #000;
         position: relative;
         display: flex;
@@ -65,11 +66,9 @@
         justify-content: center;
         align-items: center;
         max-width: 720px;
-        // padding: 60px 0 !important;
+        height: 370px !important;
         margin:0 auto 20px !important;
 
-        top: -10px;
-        height: 300px;
         background: #fff;
         border: 1px solid #fff;
         border-radius: 15px;     
@@ -77,7 +76,7 @@
         box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.05);
 
         h2{
-            font-size: 3.5em;
+            font-size: 3.2em;
             margin-top: 40px;
         }
         p{
@@ -129,17 +128,21 @@
 
 
 //media queries
-@media screen and (min-width:799px){
+@media screen and (min-width:599px){
     #banner-section{
+        .container{
+            .wlc-txt{
+                padding-top: 10% !important;
+            }
+        }
         .open-hrs{
-            top: -15%;
+            max-width: 84.4% !important;
         }
     }
 }
 @media screen and (min-width:1279px){
     #banner-section{
         .open-hrs{
-            max-width: 80% !important;
             top: -25%;
         }
     }
