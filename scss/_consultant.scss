@@ -46,7 +46,19 @@
             }
         
             .one{
-                background: url(../assets/image/banner-bg.jpg);
+                background: url(../assets/image/doctor-1.jpg);
+                @include image-kindred();
+            }
+            .two{
+                background: url(../assets/image/doctor-2.jpg);
+                @include image-kindred();
+            }
+            .three{
+                background: url(../assets/image/doctor-3.jpg);
+                @include image-kindred();
+            }
+            .four{
+                background: url(../assets/image/doctor-4.jpg);
                 @include image-kindred();
             }
             .overlay{
