@@ -21,7 +21,6 @@
         p{
             font-size:0.8rem;
             padding: 1rem 5%;
-            // max-width: 700px;
         }
     }
     .cards{
@@ -46,19 +45,23 @@
             }
         
             .one{
-                background: url(../assets/image/doctor-1.jpg);
+                // background: url(../assets/image/doctor-1.jpg);
+                background: #000;
                 @include image-kindred();
             }
             .two{
-                background: url(../assets/image/doctor-2.jpg);
+                // background: url(../assets/image/doctor-2.jpg);
+                background: #000;
                 @include image-kindred();
             }
             .three{
-                background: url(../assets/image/doctor-3.jpg);
+                // background: url(../assets/image/doctor-3.jpg);
+                background: #000;
                 @include image-kindred();
             }
             .four{
-                background: url(../assets/image/doctor-4.jpg);
+                // background: url(../assets/image/doctor-4.jpg);
+                background: #000;
                 @include image-kindred();
             }
             .overlay{
