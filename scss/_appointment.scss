@@ -1,7 +1,7 @@
 #appointment-section{   
     background: #04091e;
     text-align: center;
-    // padding: 30px 0;
+    padding: 30px 0;
     margin-bottom: 30px;
     .appointment_img{
        display: none;
@@ -52,6 +52,7 @@
     #appointment-section{  
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 0;
         .appointment_img{
            display: block;
         background: url(../assets/image/appoinment-img.jpg);
