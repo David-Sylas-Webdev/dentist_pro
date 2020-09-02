@@ -49,6 +49,7 @@ if(window.innerWidth >600){
         }
     
         tiles[x].classList.add("active");
+        
         tiles[y].classList.add("active");
     
     
