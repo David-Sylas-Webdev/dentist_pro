@@ -125,3 +125,11 @@
     }        
 
 }
+
+.not-active{
+    display: none !important;
+ }
+ 
+ .active{
+     display: inline-flex !important;
+ }
