@@ -1,0 +1,102 @@
+#serve-section{
+    display: flex;
+    align-self: center;
+    color: #fff;
+    background: #04091e;
+    margin-bottom: 50px;
+    min-height: 620px !important;
+    font-size: 10px;     //reference font
+    .main-img{
+        display: none !important;
+    }
+    .main-txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 15px;
+        background: #04091e;
+        h1{
+            font-size: 2.5em;
+            padding-bottom: 10px;
+        }
+        h2{
+            font-size: 1.7em;
+            margin: 20px 0;
+        }
+        p{
+            font-size: 1.3em;
+            line-height: 1.9;
+            color: #777;
+            padding-right: 5px;
+        }
+
+        .sub-txt-top{
+            margin: 0 auto;
+            padding: 0 5% 30px 10%;
+        }
+        .sub-txt-bottom{
+            display: flex;
+            flex-direction: column;
+            padding: 0 5% 30px 10%;
+            
+            .sub-1,.sub-2{
+                max-width: 400px !important;
+                padding-bottom: 20px;
+                svg{
+                    width: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px){
+    #serve-section{
+        .main-txt{    
+            h1{
+                font-size: 2.8em;
+            }
+            h2{
+                font-size: 1.7em;
+            }
+            p{
+                font-size: 1.3em;
+            }
+            .sub-txt-bottom{
+                display: flex;
+                flex-direction: row;
+                padding: 0 5% 30px 10%;
+                .sub-1{
+                    padding-right: 7px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    #serve-section{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+        .main-img{
+            display: block !important;
+            img{
+                // width: 100%;
+                height: 100% !important;
+            }
+        }
+        .main-txt{
+            h1{
+                font-size: 3em;
+            }
+            h2{
+                font-size: 2em;
+            }
+            p{
+                font-size: 1.4em;
+                padding-right: 7px;
+            }
+        }
+    }
+}
