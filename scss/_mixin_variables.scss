@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap);
 
 
@@ -14,4 +15,16 @@ a{
     color: inherit;
 }
 
+
+$primary-color: #67BC00;
+
+@mixin btn($font-size,$padding-updown,$padding-sides){
+    text-decoration:none;
+    background-image: linear-gradient(0deg,#ade600 0%,#62b900 100%);
+    color: #fff;
+    font-size: $font-size;
+    border: transparent;
+    font-weight: 600;
+    padding: $padding-updown $padding-sides;
+}
 
