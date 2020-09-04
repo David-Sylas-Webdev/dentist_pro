@@ -107,7 +107,7 @@ nav #menu #hamburger-div svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
+  position: fixed;
   z-index: 10000;
   top: 0;
   width: 60%;
@@ -235,7 +235,7 @@ nav #menu #hamburger-div svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: absolute;
+    position: fixed;
     background-color: #fff;
     border: 1px solid #ece9e9;
     -webkit-transform: translate3d(370px, 40px, 0px);
