@@ -107,7 +107,7 @@ nav #menu #hamburger-div svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
+  position: fixed;
   z-index: 10000;
   top: 0;
   width: 60%;
@@ -235,7 +235,7 @@ nav #menu #hamburger-div svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: absolute;
+    position: fixed;
     background-color: #fff;
     border: 1px solid #ece9e9;
     -webkit-transform: translate3d(370px, 40px, 0px);
@@ -847,6 +847,53 @@ nav #menu #hamburger-div svg {
   margin: 0 auto;
 }
 
+#consultants-section .cards .card:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#consultants-section .cards .card .one {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f9f9ff;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#consultants-section .cards .card .two {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f9f9ff;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#consultants-section .cards .card .three {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f9f9ff;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#consultants-section .cards .card .four {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f9f9ff;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 #consultants-section .cards .card .img {
   background: #fff;
   width: 100%;
@@ -867,6 +914,7 @@ nav #menu #hamburger-div svg {
   opacity: 0;
   -webkit-transition: .5s ease;
   transition: .5s ease;
+  background-color: #67BC00;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(100%, rgba(222, 231, 195, 0.8)), color-stop(0%, #dbddd9));
   background-image: linear-gradient(0deg, rgba(222, 231, 195, 0.8) 100%, #dbddd9 0%);
 }
@@ -1038,7 +1086,7 @@ nav #menu #hamburger-div svg {
 }
 
 #appointment-section .form_sectn {
-  width: 100%;
+  width: 80%;
   margin: 25px auto;
 }
 
@@ -1104,7 +1152,7 @@ nav #menu #hamburger-div svg {
     background-position: center;
   }
   #appointment-section .form_sectn {
-    width: 80%;
+    width: 90%;
   }
   #appointment-section .form_sectn input[type='text'],
   #appointment-section .form_sectn input[type='tel'],
@@ -1145,7 +1193,9 @@ nav #menu #hamburger-div svg {
 
 #blog-section .blog-img {
   width: 100%;
-  height: 300px;
+  height: 100%;
+  border: 1px solid #f9f9ff;
+  border-radius: 5px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1255,7 +1305,11 @@ h2, ul[title]::before {
 #footer .main {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'products' 'contact' 'newsletter' '..........' 'copyright';
+      grid-template-areas: 'products'
+ 'contact'
+ 'newsletter'
+ '..........'
+ 'copyright';
   -ms-grid-rows: (1fr)[3] 50px 90px;
       grid-template-rows: repeat(3, 1fr) 50px 90px;
   grid-gap: 2rem;
@@ -1349,7 +1403,10 @@ h2, ul[title]::before {
   #footer .main {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: 'products contact' 'newsletter newsletter' '. .' 'copyright copyright';
+        grid-template-areas: 'products contact'
+ 'newsletter newsletter'
+ '. .'
+ 'copyright copyright';
     -ms-grid-rows: 1fr 1fr 50px 90px;
         grid-template-rows: 1fr 1fr 50px 90px;
     -ms-grid-columns: 1fr 1fr;
@@ -1392,7 +1449,9 @@ h2, ul[title]::before {
   #footer .main {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: 'products contact newsletter' '. . .' 'copyright copyright copyright';
+        grid-template-areas: 'products contact newsletter'
+ '. . .'
+ 'copyright copyright copyright';
     -ms-grid-rows: 1fr 10px 90px;
         grid-template-rows: 1fr 10px 90px;
     -ms-grid-columns: 0.5fr 1fr 1.5fr;
