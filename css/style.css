@@ -1255,7 +1255,11 @@ h2, ul[title]::before {
 #footer .main {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'products' 'contact' 'newsletter' '..........' 'copyright';
+      grid-template-areas: 'products'
+ 'contact'
+ 'newsletter'
+ '..........'
+ 'copyright';
   -ms-grid-rows: (1fr)[3] 50px 90px;
       grid-template-rows: repeat(3, 1fr) 50px 90px;
   grid-gap: 2rem;
@@ -1349,7 +1353,10 @@ h2, ul[title]::before {
   #footer .main {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: 'products contact' 'newsletter newsletter' '. .' 'copyright copyright';
+        grid-template-areas: 'products contact'
+ 'newsletter newsletter'
+ '. .'
+ 'copyright copyright';
     -ms-grid-rows: 1fr 1fr 50px 90px;
         grid-template-rows: 1fr 1fr 50px 90px;
     -ms-grid-columns: 1fr 1fr;
@@ -1392,7 +1399,9 @@ h2, ul[title]::before {
   #footer .main {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: 'products contact newsletter' '. . .' 'copyright copyright copyright';
+        grid-template-areas: 'products contact newsletter'
+ '. . .'
+ 'copyright copyright copyright';
     -ms-grid-rows: 1fr 10px 90px;
         grid-template-rows: 1fr 10px 90px;
     -ms-grid-columns: 0.5fr 1fr 1.5fr;
