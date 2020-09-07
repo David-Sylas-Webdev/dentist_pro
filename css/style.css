@@ -275,7 +275,7 @@ nav #menu #hamburger-div svg {
   height: 800px;
   font-size: 10px;
   margin-bottom: 200px;
-  background: url(/assets/image/banner-bg.jpg);
+  background: url(../assets/image/banner-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -593,19 +593,19 @@ nav #menu #hamburger-div svg {
 }
 
 #offer-section #offer-album > div[id*="offer-"] .first {
-  background-image: url(/assets/image/pexels-anna-shvets-3845653.jpg);
+  background-image: url(../assets/image/pexels-anna-shvets-3845653.jpg);
 }
 
 #offer-section #offer-album > div[id*="offer-"] .second {
-  background-image: url(/assets/image/pexels-robert-golebiewski-3663999.jpg);
+  background-image: url(../assets/image/pexels-robert-golebiewski-3663999.jpg);
 }
 
 #offer-section #offer-album > div[id*="offer-"] .third {
-  background-image: url(/assets/image/pexels-anna-shvets-3845984.jpg);
+  background-image: url(../assets/image/pexels-anna-shvets-3845984.jpg);
 }
 
 #offer-section #offer-album > div[id*="offer-"] .fourth {
-  background-image: url(/assets/image/pexels-robert-golebiewski-3663999.jpg);
+  background-image: url(../assets/image/pexels-robert-golebiewski-3663999.jpg);
 }
 
 #offer-section #offer-album > div[id*="offer-"] .offer-header {
@@ -729,27 +729,27 @@ nav #menu #hamburger-div svg {
 }
 
 .une {
-  background-image: url("/assets/image/pexels-andrea-piacquadio-774909.jpg") !important;
+  background-image: url("../assets/image/pexels-andrea-piacquadio-774909.jpg") !important;
 }
 
 .deux {
-  background-image: url("/assets/image/pexels-creation-hill-1681010.jpg") !important;
+  background-image: url("../assets/image/pexels-creation-hill-1681010.jpg") !important;
 }
 
 .trois {
-  background-image: url("/assets/image/pexels-andrea-piacquadio-3755755.jpg") !important;
+  background-image: url("../assets/image/pexels-andrea-piacquadio-3755755.jpg") !important;
 }
 
 .quatre {
-  background-image: url("/assets/image/pexels-victor-miyata-1845534.jpg") !important;
+  background-image: url("../assets/image/pexels-victor-miyata-1845534.jpg") !important;
 }
 
 .cinq {
-  background-image: url("/assets/image/pexels-đỗ-ngọc-tú-quyên-1520760.jpg") !important;
+  background-image: url("../assets/image/pexels-đỗ-ngọc-tú-quyên-1520760.jpg") !important;
 }
 
 .six {
-  background-image: url("/assets/image/pexels-daria-shevtsova-789812.jpg") !important;
+  background-image: url("../assets/image/pexels-daria-shevtsova-789812.jpg") !important;
 }
 
 #circles {
@@ -894,6 +894,13 @@ nav #menu #hamburger-div svg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+#consultants-section .cards .card .img {
+  background: #fff;
+  width: 100%;
+}
+
+#consultants-section .cards .card .img img {
+  width: 100%;
 }
 
 #consultants-section .cards .card .overlay {
@@ -908,6 +915,30 @@ nav #menu #hamburger-div svg {
   -webkit-transition: .5s ease;
   transition: .5s ease;
   background-color: #67BC00;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(100%, rgba(222, 231, 195, 0.8)), color-stop(0%, #dbddd9));
+  background-image: linear-gradient(0deg, rgba(222, 231, 195, 0.8) 100%, #dbddd9 0%);
+}
+
+#consultants-section .cards .card .overlay h4 {
+  font-size: 14px;
+  margin-top: 40%;
+  font-weight: 700;
+}
+
+#consultants-section .cards .card .overlay h5 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#consultants-section .cards .card .overlay p {
+  font-size: 12px;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+#consultants-section .cards .card .overlay:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 @media screen and (min-width: 700px) {
@@ -920,6 +951,8 @@ nav #menu #hamburger-div svg {
     padding: 30px 5%;
   }
   #consultants-section .cards .card {
+    width: 270px;
+    height: 300px !important;
     margin: 0 0 !important;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1044,6 +1077,7 @@ nav #menu #hamburger-div svg {
 #appointment-section {
   background: #04091e;
   text-align: center;
+  padding: 30px 0;
   margin-bottom: 30px;
 }
 
@@ -1109,6 +1143,7 @@ nav #menu #hamburger-div svg {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    padding: 0;
   }
   #appointment-section .appointment_img {
     display: block;
@@ -1167,19 +1202,19 @@ nav #menu #hamburger-div svg {
 }
 
 #blog-section .one {
-  background-image: url(/assets/image/pexels-ketut-subiyanto-4545968.jpg);
+  background-image: url(../assets/image/pexels-ketut-subiyanto-4545968.jpg);
 }
 
 #blog-section .two {
-  background-image: url(/assets/image/pexels-daria-shevtsova-962784.jpg);
+  background-image: url(../assets/image/pexels-daria-shevtsova-962784.jpg);
 }
 
 #blog-section .three {
-  background-image: url(/assets/image/pexels-andrea-piacquadio-3755755.jpg);
+  background-image: url(../assets/image/pexels-andrea-piacquadio-3755755.jpg);
 }
 
 #blog-section .four {
-  background-image: url(/assets/image/pexels-oleg-magni-958946.jpg);
+  background-image: url(../assets/image/pexels-oleg-magni-958946.jpg);
 }
 
 #blog-section .date-header {
@@ -1251,4 +1286,196 @@ nav #menu #hamburger-div svg {
     line-height: 2 !important;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+h2, ul[title]::before {
+  content: attr(title);
+  /* then add some nice styling as needed, eg: */
+  display: block;
+  font-weight: bold;
+  padding: 15px 0;
+  font-size: 18px;
+}
+
+#footer {
+  background: #04091e;
+  padding: 80px 5% 50px;
+  color: #fff;
+}
+
+#footer .main {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'products'
+ 'contact'
+ 'newsletter'
+ '..........'
+ 'copyright';
+  -ms-grid-rows: (1fr)[3] 50px 90px;
+      grid-template-rows: repeat(3, 1fr) 50px 90px;
+  grid-gap: 2rem;
+}
+
+#footer .main li, #footer .main p {
+  list-style: none;
+  font-size: 14px;
+  padding: 10px 0;
+  line-height: 1.7;
+}
+
+#footer .main input[type='email'] {
+  width: 80%;
+  height: 40px;
+  color: #222;
+  background: #fff;
+  border: 1px solid #777;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin: 25px 15px 25px 0;
+}
+
+#footer .main .lg {
+  font-size: 25px;
+  color: #67BC00;
+  padding: 0;
+  font-weight: 700;
+}
+
+#footer .main .sub_one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: products;
+}
+
+#footer .main .sub_two {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: contact;
+}
+
+#footer .main .sub_three {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: newsletter;
+}
+
+#footer .main .sub_three a {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ade600), to(#62b900));
+  background-image: linear-gradient(0deg, #ade600 0%, #62b900 100%);
+  color: #fff;
+  font-size: 12px;
+  border: transparent;
+  font-weight: 600;
+  padding: 12px 35px;
+  border-radius: 15px;
+}
+
+#footer .main .sub_copy {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: copyright;
+}
+
+#footer .main .sub_copy p {
+  font-size: 12px !important;
+}
+
+#footer .main .sub_copy p a {
+  color: #62b900;
+}
+
+#footer .main .sub_copy #l-social a {
+  padding: 5px;
+}
+
+#footer .main .sub_copy #l-social a svg {
+  width: 15px;
+  height: 15px;
+  fill: #fff;
+}
+
+#footer .main .sub_copy #l-social a:hover, #footer .main .sub_copy #l-social a:active {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ade600), to(#62b900));
+  background-image: linear-gradient(0deg, #ade600 0%, #62b900 100%);
+}
+
+@media screen and (min-width: 800px) {
+  #footer .main {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'products contact'
+ 'newsletter newsletter'
+ '. .'
+ 'copyright copyright';
+    -ms-grid-rows: 1fr 1fr 50px 90px;
+        grid-template-rows: 1fr 1fr 50px 90px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #footer .main .sub_one {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: products;
+  }
+  #footer .main .sub_two {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: contact;
+  }
+  #footer .main .sub_three {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: newsletter;
+  }
+  #footer .main .sub_copy {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: copyright;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #footer .main input[type='email'] {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  #footer .main {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'products contact newsletter'
+ '. . .'
+ 'copyright copyright copyright';
+    -ms-grid-rows: 1fr 10px 90px;
+        grid-template-rows: 1fr 10px 90px;
+    -ms-grid-columns: 0.5fr 1fr 1.5fr;
+        grid-template-columns: 0.5fr 1fr 1.5fr;
+  }
+  #footer .main .sub_one {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: products;
+  }
+  #footer .main .sub_two {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: contact;
+  }
+  #footer .main .sub_three {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: newsletter;
+  }
+  #footer .main .sub_copy {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: copyright;
+  }
+}

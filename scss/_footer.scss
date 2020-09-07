@@ -1,0 +1,164 @@
+h2,ul[title]::before {
+    content: attr(title);
+    /* then add some nice styling as needed, eg: */
+    display: block;
+    font-weight: bold;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+#footer{
+    background: #04091e;
+    padding: 80px 5% 50px;
+    color: #fff;
+
+    .main{
+        display: grid;
+        grid-template-areas: 'products'
+                            'contact'
+                            'newsletter'
+                            '..........'
+                            'copyright';
+        grid-template-rows: repeat(3, 1fr) 50px 90px;
+        grid-gap: 2rem;
+        
+        li, p{
+            list-style: none;
+            font-size: 14px;
+            padding: 10px 0;
+            line-height: 1.7;
+        }
+        input[type='email']{
+            width: 80%;
+            height: 40px;
+            color: #222;
+            background: #fff;
+            border: 1px solid #777;
+            border-radius: 15px;
+            padding: 10px 15px;
+            margin: 25px 15px 25px 0;
+        }
+        
+        .lg{
+            font-size: 25px;
+            color: $primary-color;
+            padding: 0;
+            font-weight: 700;
+        }
+
+        .sub_one{
+            grid-area: products;
+            // background: red;
+        }
+        .sub_two{
+            grid-area: contact;
+            // background: yellow;
+        }
+        .sub_three{
+            grid-area: newsletter;
+            // background: green;
+            a{
+                // display: block;
+                @include btn(12px,12px, 35px);
+                // width: 150px;
+                border-radius: 15px;
+            }
+        }
+        .sub_copy{
+            grid-area: copyright;
+            p{
+                font-size: 12px !important;
+                a{
+                    color: #62b900;
+                }
+            }
+            #l-social{
+                // width: 30px;
+                a{
+                    padding: 5px;
+                    svg{
+                        width: 15px;
+                        height: 15px;
+                        fill: #fff;
+                        // padding: 10px;
+                        // margin-right: 10px;
+                    }
+                    
+                    &:hover,&:active{
+                        background-image: linear-gradient(0deg,#ade600 0%,#62b900 100%);
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px){
+    #footer{
+        .main{
+            display: grid;
+            grid-template-areas: 
+                        'products contact'
+                        'newsletter newsletter'
+                        '. .'
+                        'copyright copyright';
+            grid-template-rows: 1fr 1fr 50px 90px;
+            grid-template-columns: 1fr 1fr;
+
+            .sub_one{
+                grid-area: products;
+                // background: red;
+            }
+            .sub_two{
+                grid-area: contact;
+                // background: yellow;
+            }
+            .sub_three{
+                grid-area: newsletter;
+                // background: green;
+            }
+            .sub_copy{
+                grid-area: copyright;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            input[type='email']{
+                width: 60%;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1180px){
+    #footer{
+        .main{
+            display: grid;
+            grid-template-areas:
+                            'products contact newsletter'
+                            '. . .'
+                            'copyright copyright copyright';
+            grid-template-rows: 1fr 10px 90px;
+            grid-template-columns: 0.5fr 1fr 1.5fr;
+
+            .sub_one{
+                grid-area: products;
+                // background: red;
+            }
+            .sub_two{
+                grid-area: contact;
+                // background: yellow;
+            }
+            .sub_three{
+                grid-area: newsletter;
+                // background: green;
+            }
+            .sub_copy{
+                grid-area: copyright;
+                // background: blue;
+            }
+        }
+    }
+}
