@@ -1,9 +1,10 @@
 const tiles = document.getElementsByClassName("slide-tile");
 
-let presentCount = 0, animationID;
+let animationID;
 
 if (window.innerWidth < 600){
 
+    let presentCount = 0;
     for(let i=1; i<tiles.length; i++){
         tiles[i].classList.add("not-active");
     }
