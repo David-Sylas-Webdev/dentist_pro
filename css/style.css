@@ -790,8 +790,8 @@ nav #menu #hamburger-div svg {
   #slide-album {
     -ms-grid-columns: (1fr)[2] !important;
         grid-template-columns: repeat(2, 1fr) !important;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
@@ -1224,6 +1224,10 @@ nav #menu #hamburger-div svg {
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 16px;
   }
+  #map {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -1235,6 +1239,21 @@ nav #menu #hamburger-div svg {
   #blog-album .blog-in-detail {
     line-height: 2 !important;
   }
+  #map {
+    padding: 0px !important;
+  }
+  #map iframe {
+    height: 60vh !important;
+  }
+}
+
+#map {
+  padding: 0px 16px 64px 16px;
+}
+
+#map iframe {
+  width: 100%;
+  height: 45vh;
 }
 
 h2, ul[title]::before {
@@ -1420,3 +1439,4 @@ h2, ul[title]::before {
     grid-area: copyright;
   }
 }
+/*# sourceMappingURL=style.css.map */
